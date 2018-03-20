@@ -1,18 +1,18 @@
 
 variable "cluster_vpc" {
   description = "The vpc where the cluster will reside"
-  default = "vpc-12345678" 
+  default = "vpc-3fb6a658" 
 }
 
 # The first subnet to put machines in, must be different avalability zone than subnet_id2 below
 variable "subnet1" {
-  default = "subnet-12345678"
+  default = "subnet-558bb332"
 }
 
 # The second subnet to put machines in, must be different avalability zone than subnet_id1 abolve
 variable "subnet2" {
   # If you don' want to give subnet as argument every time, uncomment line below and put your desired subnet id as default
-  default = "subnet-12345678"
+  default = "subnet-4d5d5104"
 }
 
 variable "region" {
@@ -31,7 +31,7 @@ variable "amis" {
 
   # Change to the most current ami for your region found at http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI_launch_latest.html  
   default = {
-    eu-west-1 = "ami-a1e6f5c7"
+    eu-west-1 = "ami-bfb5fec6"
   }
 }
 
